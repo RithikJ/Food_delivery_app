@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    android:orientation="vertical"
+    tools:context=".Phone_authentication">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Welcome to"
+        android:textColor="#F3EDED"
+        android:textSize="60sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:gravity="center_horizontal"
+        android:text="SouthX"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF0000"
+        android:textSize="96sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:gravity="center_horizontal"
+        android:text="FoodStop"
+        android:textColor="#FAF1F1"
+        android:textSize="60sp"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:hapticFeedbackEnabled="false"
+        app:cardBackgroundColor="#615F5F"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccpDialog_textColor="@color/white"
+                app:ccp_contentColor="@color/white" />
+
+            <EditText
+                android:id="@+id/mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Mobile"
+                android:inputType="number"
+                android:textColor="#FDFCFC"
+                android:textColorHint="#FDFCFC" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/otp_gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#FFA000"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:text="Get OTP"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#FF6F00"
+        app:backgroundTintMode="src_in"
+        app:cornerRadius="20dp" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#615F5F"
+
+        android:ems="10"
+        android:inputType="number"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="#FDFCFC" />
+
+    <Button
+        android:id="@+id/verifed_phone_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#FFA000"
+        android:enabled="false"
+        android:text="Verify and next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#FF6F00"
+        app:backgroundTintMode="src_in" />
+
+</LinearLayout>

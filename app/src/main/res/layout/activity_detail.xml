@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarSize="18sp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/foodimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/pizza" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#323232"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FDFCFC"
+                    android:textSize="34sp"
+                    android:textStyle="bold|italic"
+                    tools:text="Name" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs"
+                        android:textColor="#FDFCFC"
+                        android:textSize="34sp"
+                        tools:text="Rs" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:text="TextView"
+                        android:textColor="#FDFCFC"
+                        android:textSize="34sp"
+                        tools:text="Price" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#FDFCFC"
+                    android:textSize="24sp"
+                    tools:text="Description" />
+
+                <LinearLayout
+                    android:id="@+id/Inc_dec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#323232"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <ImageView
+                        android:id="@+id/increase"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:foregroundGravity="center_horizontal"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:foregroundGravity="center_horizontal"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="0"
+                        android:textColor="#FDFCFC"
+                        android:textSize="48sp" />
+
+                    <ImageView
+                        android:id="@+id/decrease"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:foregroundGravity="center_horizontal"
+                        android:padding="10dp"
+                        app:srcCompat="@android:drawable/presence_busy" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/order_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order"
+                    android:textSize="34sp"
+                    app:backgroundTint="#FFA000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
